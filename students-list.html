@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KC Students List</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="students-list text-center mt-5">
+            <h2>User List</h2>
+            <table class="table mt-4">
+                <thead>
+                    <tr><td colspan="5"></td></tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-between">
+                    <li class="page-item">
+                        <a class="page-link page-prev" href="javascript:;" onclick="showPrev()" style="cursor: not-allowed;">Prev</a>
+                    </li>
+                    <li class="page-item">
+                        <span class="current-page">1</span>
+                    </li>
+                    <li class="page-item page-next">
+                        <a class="page-link page-next" href="javascript:;" onclick="showNext()">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="demo"></div>
+
+    <div class="text-center logout-part">
+        <a href="javascript:;" class="logout" onclick="logout()"><i class="fa fa-sign-out"></i> Logout</a>
+    </div>
+</body>
+<script src="./assets/js/jquery-3.4.1.min.js"></script>
+<script src="./assets/js/students-list.js"></script>
+</html>
